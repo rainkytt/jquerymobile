@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="themes/jmobile.min.css" />
+    <title>Praktikum - jquerymobile 7(31.01)</title>
+  </head>
+
+  <body>
+    <div data-role="page" id="leht1" data-fullscreen="true">
+      <div data-role="header" data-position="fixed">
+        <h1>Sõbralik Karu</h1>
+
+        <div data-role="content">
+          <form action="#leht1" method="get" data-transition="flow">
+            <input type="email" id="user" placeholder="demo@example.com" />
+            <input type="password" id="password" placeholder="demo" />
+            <a href="#leht2" data-role="button" data-transition="flow">Login</a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end of leht1 -->
+
+    <div data-role="page" id="leht2" data-fullscreen="true">
+      <div data-role="header" data-position="fixed">
+        <a data-rel="back" data-transition="flow">Tagasi</a>
+        <h3>Sõbralik karu</h3>
+        <a href="#leht1">Logi välja</a>
+        <div data-role="navbar">
+          <ul>
+            <li>
+              <a
+                href="#popupParis"
+                data-rel="popup"
+                data-position-to="window"
+                class="ui-btn ui-corner-all ui-shadow ui-btn-inline"
+                >TEA</a
+              >
+              <div
+                id="popupParis"
+                data-role="popup"
+                data-theme="b"
+                data-corners="false"
+                data-overlay-theme="b"
+              >
+                <a
+                  class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right"
+                  href="#"
+                  data-rel="back"
+                  >Close</a
+                ><img
+                  class="popphoto"
+                  style="max-height:512px;"
+                  alt="karu1"
+                  src="img/karu1.jpg"
+                />
+              </div>
+            </li>
+
+            <li>
+              <a
+                href="#popupSydney"
+                data-rel="popup"
+                data-position-to="window"
+                class="ui-btn ui-corner-all ui-shadow ui-btn-inline"
+                >LOE</a
+              >
+              <div
+                id="popupSydney"
+                data-role="popup"
+                data-theme="b"
+                data-corners="false"
+                data-overlay-theme="b"
+              >
+                <a
+                  class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right"
+                  href="#"
+                  data-rel="back"
+                  >Close</a
+                ><img
+                  class="popphoto"
+                  style="max-height:512px;"
+                  alt="karu2"
+                  src="img/karu2.jpg"
+                />
+              </div>
+            </li>
+
+            <li>
+              <a
+                href="#popupNYC"
+                data-rel="popup"
+                data-position-to="window"
+                class="ui-btn ui-corner-all ui-shadow ui-btn-inline"
+                >VAATA</a
+              >
+              <div
+                id="popupNYC"
+                data-role="popup"
+                data-theme="b"
+                data-corners="false"
+                data-overlay-theme="b"
+              >
+                <a
+                  class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right"
+                  href="#"
+                  data-rel="back"
+                  >Close</a
+                ><img
+                  class="popphoto"
+                  style="max-height:512px;"
+                  alt="karu3"
+                  src="img/karu3.jpg"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- end navbar -->
+      </div>
+      <!-- end header -->
+      <div data-role="content">
+        <ul data-role="listview" data-inset="true">
+          <li>
+            <a href="#leht3" data-transition="flow"
+              >Sõber Karu mobiilirakendusest</a
+            >
+          </li>
+          <li>
+            <a href="#leht4" data-transition="flow">Kes on Sõber Karu?</a>
+          </li>
+          <li>
+            <a href="#leht5" data-transition="flow"
+              >Sõber Karu ja lapse õigused</a
+            >
+          </li>
+          <li>
+            <a href="#leht6" data-transition="flow"
+              >Miks räägime kiusamisest?</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- end of content -->
+
+      <div id="footer" data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+          <ul>
+            <li>
+              <a href="#leht2" data-icon="home" data-transition="flow"></a>
+            </li>
+            <li>
+              <a href="#eesmark" data-icon="bullets" data-transition="flow"></a>
+            </li>
+            <li>
+              <a href="#kysimustik" data-icon="star" data-transition="flow"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end of leht2 -->
+
+    <div data-role="page" id="leht3" data-fullscreen="true">
+      <div data-role="header" data-position="fixed">
+        <a data-rel="back" data-transition="flow">Tagasi</a>
+        <h3>Sõbralik karu</h3>
+        <a href="#leht1">Logi välja</a>
+      </div>
+      <p>
+        Kui palju ja kuidas sa tegelikult oma lapsega koos aega veedad? <br />
+        Kui teed, tee täisväärtuslikult!
+      </p>
+      <p>
+        Sõber Karu mobiilirakendus on tööriist lapsevanemale, mis suunab lapsega
+        veedetud aega teadlikult paremini planeerima ja täisväärtuslikumalt
+        kasutama. Seeläbi õpetab Sõber Karu sulle, kuidas oma lapse arengut
+        loovalt toetada ja aidata tal kasvada heaks kaaslaseks.
+      </p>
+      <div id="footer" data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+          <ul>
+            <li>
+              <a href="#leht2" data-icon="home" data-transition="flow"></a>
+            </li>
+            <li>
+              <a href="#eesmark" data-icon="bullets" data-transition="flow"></a>
+            </li>
+            <li>
+              <a href="#kysimustik" data-icon="star" data-transition="flow"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end of leht3 -->
+
+    <div data-role="page" id="leht4" data-fullscreen="true">
+      <div data-role="header" data-position="fixed">
+        <a data-rel="back" data-transition="flow">Tagasi</a>
+        <h3>Sõbralik karu</h3>
+        <a href="#leht1">Logi välja</a>
+      </div>
+      <p>
+        Sõber Karu on kiusamist ennetava tõenduspõhise metoodika "Kiusamisest
+        vabaks!" sümbol, kõikide laste ühine sõber, lohutaja ja vahendaja.
+        2016.aastaks on Sõber Karu tuttav 439 lasteaia ja 81 kooli lastele ja
+        nende vanematele. Seega on tegemist tugevat sõnumit kandva ja tuttava ja
+        turvalise tegelasega, kelle abil kõnetada nii lapsi kui ka täiskasvanuid
+      </p>
+      <p>
+        Täiskasvanud vastutavad lastele sotsiaalsete suhete õpetamise eest,
+        seega on oluline, et vanemad oleks ise teadlikud ning igal hetkel oma
+        lapsele heaks eeskujuks.
+      </p>
+
+      <p>
+        Vaata rohkem: <br />
+        <a href="http://www.kiusamisestvabaks.ee/" target="_blank"
+          >www.kiusamisestvabaks.ee</a
+        >
+      </p>
+      <div id="footer" data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+          <ul>
+            <li>
+              <a href="#leht2" data-icon="home" data-transition="flow"></a>
+            </li>
+            <li>
+              <a href="#eesmark" data-icon="bullets" data-transition="flow"></a>
+            </li>
+            <li>
+              <a href="#kysimustik" data-icon="star" data-transition="flow"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end of leht4 -->
+
+    <div data-role="page" id="leht5" data-fullscreen="true">
+      <div data-role="header" data-position="fixed">
+        <a data-rel="back" data-transition="flow">Tagasi</a>
+        <h3>Sõbralik karu</h3>
+        <a href="#leht1">Logi välja</a>
+      </div>
+      <p>"Kiusamisest vaba lasteaed ja kool" on MTÜ Lastekaitse Liidu 
+        projekt ning vastab ühingu tegevuse põhieesmärgile - lapse õiguste 
+        tagamisele ja lapsesõbraliku ühiskonna kujundamisele.
+        <br><br>
+        Vanemad on need, kellel on esmane kohustus last hoida, kaitsta 
+        ning tagada tema eakohane ja igakülgne areng. Last tuleb kaitsta 
+        nii vaimse kui ka füüsilise vägivalla, hooletussejätmise ja muude 
+        ohtude eest.
+        <br><br>
+        Et laps ei satuks kiusajaks, kiusatavaks ega jääks ka passiivse 
+        kõrvalvaataja rolli, peab ta õppima positiivseid sotsiaalseid oskusi. 
+        Lapsel on õigus kiusamisvabale elule ning hooliv ja teadlik vanem 
+        saab teda selles toetada, õpetades talle olulisi põhiväärtusi - 
+        julgust, hoolivust, sallivust ja ausust.
+        </p><br>
+        <p>Vaata rohkem: <br>
+        <a href="http://www.lastekaitseliit.ee/" target="_blank">www.lastekaitseliit.ee</a></p>
+      <div id="footer" data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+          <ul>
+            <li>
+              <a href="#leht2" data-icon="home" data-transition="flow"></a>
+            </li>
+            <li>
+              <a href="#eesmark" data-icon="bullets" data-transition="flow"></a>
+            </li>
+            <li>
+              <a href="#kysimustik" data-icon="star" data-transition="flow"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end of leht5 -->
+
+    <div data-role="page" id="leht6" data-fullscreen="true">
+      <div data-role="header" data-position="fixed">
+        <a data-rel="back" data-transition="flow">Tagasi</a>
+        <h3>Sõbralik karu</h3>
+        <a href="#leht1">Logi välja</a>
+      </div>
+      <p>Kiusamine ei puuduta ainult ohvrit ja kiusajat, vaid on rühmafenomen. 
+        Kiusamismudelis on roll ka kaasajooksikutel ja passiivsetel pealtvaatajatel.
+        <br><br>
+        Kiusamine on süstemaatiline. Tegu on terve hulga suuremate ja väiksemate 
+        käitumisviisidega, mis kõik annavad märku, et "sa ei kuulu siia". 
+        Kiusamine leiab aset inimkoosluses, kus ohver ei saa ära tulla 
+        (sealhulgas kool, lasteaed). Kiusamine võib olla nii füüsiline, 
+        verbaalne kui ka seotud sotsiaalsete suhetega. Kiusamine ei ole 
+        vältimatu, seda saab ennetada ja vähendada. Kiusamise ennetamine 
+        nõuab kõigi laste ja täiskasvanute panust. Heaks kaaslaseks 
+        olemise oskus on õpitav.
+        <br>
+        Sotsiaalsete suhete õpetamise eest vastutavad eeskätt vanemad, 
+        kes vajavad selleks omakorda teadmisi ja vahendeid. Selleks oleme 
+        loonud "Kiusamisest vabaks!" metoodika abil Sõber Karu mobiilirakenduse, 
+        mis aitab tõsta vanema teadlikkust kiusamisvaba elutee kujundamisel.
+        </p>
+      <div id="footer" data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+          <ul>
+            <li>
+              <a href="#leht2" data-icon="home" data-transition="flow"></a>
+            </li>
+            <li>
+              <a href="#eesmark" data-icon="bullets" data-transition="flow"></a>
+            </li>
+            <li>
+              <a href="#kysimustik" data-icon="star" data-transition="flow"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end of leht6 -->
+
+    <div data-role="page" id="eesmark" data-fullscreen="true">
+      <div data-role="header" data-position="fixed">
+        <a data-rel="back" data-transition="flow">Tagasi</a>
+        <h3>Sõbralik karu</h3>
+        <a href="#leht1">Logi välja</a>
+        <div data-role="navbar">
+          <ul>
+              <li><a href="#eesmark">LISAMINE</a></li>
+              <li><a href="#valmis" data-transition="flow">EESMÄRK</a></li>
+          </ul>
+      </div>
+      </div>
+
+      <div data-role="content">
+        <h2>Vali nädalaks <h style="background-color: yellowgreen;">5</h> eesmärki</h2>
+        <div class="eesmark">
+            <input type="checkbox" id="eesmark1">
+            <label for="eesmark1">Söön koos lapsega midagi, mida varem söönud pole</label>
+            <p>Uute maitsete proovimine julgustab katsetama, arendab uudishimu ja lapse maitsemeeli ning aitab muuta lapse toiduharjumusi mitmekesisemaks.</p>
+        </div>
+        <div class="eesmark">
+            <input type="checkbox" id="eesmark2">
+            <label for="eesmark2">Kujundan koos lapsega tema tuba ümber</label>
+            <p>Lapsega koos toa kujundamine annab võimaluse lapsel end ümbritseva olulise keskkonnaga loomisel kaasa rääkida ja olulisena tunda ning luua seeläbi just selline ruum, kus tema ennast hästi tunneb.</p>
+        </div>
+        <div class="eesmark">
+            <input type="checkbox" id="eesmark3">
+            <label for="eesmark3">Lähen koos lapsega mõnda Eesti rabasse</label>
+            <p>Rabas peitub Eesti looduse ürgne ilu. Looduses liikudes areneb tähelepanelikkus ja kannatlikkus ning kujunevad välja oskused looduses vastutustundlikult käituda ja ka ootamatustega hakkama saada.</p>
+        </div>
+        <div class="eesmark">
+            <input type="checkbox" id="eesmark4">
+            <label for="eesmark4">Lähen koos lapsega mõne jõe või järve äärde</label>
+            <p>Looduses olemine kasvatab loodustunnetust, õpetab tähelepanelikkust ja kannatlikkust. Läbi selle kujunevad lapsel välja oskused looduses liikuda ja vastutustundlikult käituda.</p>
+        </div>
+        <div class="eesmark">
+            <input type="checkbox" id="eesmark5">
+            <label for="eesmark5">Loen lapsega koos tema lemmikraamatut</label>
+            <p>Koos lugemine rikastab sõnavara, õpetab kuulama ning arendab loovust. Samuti saab raamatu ettelugemisest alguse lapse side raamatuga, tema lugemishuvi ning tee iselugemiseni.</p>
+        </div>
+    </div>
+
+      <div id="footer" data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+          <ul>
+            <li>
+              <a href="#leht2" data-icon="home" data-transition="flow"></a>
+            </li>
+            <li>
+              <a href="#eesmark" data-icon="bullets" data-transition="flow"></a>
+            </li>
+            <li>
+              <a href="#kysimustik" data-icon="star" data-transition="flow"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div> <!-- end of eesmark -->
+
+      <div data-role="page" id="valmis" data-fullscreen="true">
+        <div data-role="header" data-position="fixed">
+          <a data-rel="back" data-transition="flow">Tagasi</a>
+          <h3>Sõbralik karu</h3>
+          <a href="#leht1">Logi välja</a>
+          <div data-role="navbar">
+            <ul>
+                <li><a href="#eesmark">LISAMINE</a></li>
+                <li><a href="#valmis" data-transition="flow">EESMÄRK</a></li>
+            </ul>
+        </div>
+        </div>
+  
+        <div data-role="content">
+          <div class="done">
+              <p>Pargin auto parkla kõige kaugemasse nurka</p>
+              <input type="checkbox" id="done1" checked>
+              <label for="done1">TEHTUD</label>
+          </div>
+          <div class="done">
+              <p>Ehitan koos lapsega onni</p>
+              <input type="checkbox" id="done2" checked>
+              <label for="done2">TEHTUD</label>
+          </div>
+          <div class="done">
+              <p>Söön koos lapsega midagi, mida varem söönud pole</p>
+              <input type="checkbox" id="done3" checked>
+              <label for="done3">TEHTUD</label>
+          </div>
+          <div class="done">
+              <p>Söön koos lapsega midagi, mida varem söönud pole</p>
+              <input type="checkbox" id="done4" checked>
+              <label for="done4">TEHTUD</label>
+          </div>
+      </div>
+  
+        <div id="footer" data-role="footer" data-position="fixed">
+          <div data-role="navbar">
+            <ul>
+              <li>
+                <a href="#leht2" data-icon="home" data-transition="flow"></a>
+              </li>
+              <li>
+                <a href="#eesmark" data-icon="bullets" data-transition="flow"></a>
+              </li>
+              <li>
+                <a href="#kysimustik" data-icon="star" data-transition="flow"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div> <!-- end of valmis -->
+
+        <div data-role="page" id="kysimustik" data-fullscreen="true">
+          <div data-role="header" data-position="fixed">
+            <a data-rel="back" data-transition="flow">Tagasi</a>
+            <h3>Sõbralik karu</h3>
+            <a href="#leht1">Logi välja</a>
+            
+          </div>
+    
+          <div data-role="content">
+            <div class="kysimus">
+                <p>Kas Sa oled sel aastal käinud lapsega pargis jalutamas?</p>
+                <input type="radio" id="jah" name="kysimus1">
+                <label for="jah">Jah</label>
+                <input type="radio" id="ei" name="kysimus1">
+                <label for="ei">Ei</label>
+            </div>
+            
+            <div class="kysimus">
+                <p>Kas Sa oled lugenud see kuu lapsele ette muinasjuttu?</p>
+                <input type="radio" id="jah2" name="kysimus2">
+                <label for="jah2">Jah</label>
+                <input type="radio" id="ei2" name="kysimus2">
+                <label for="ei2">Ei</label>
+            </div>
+            
+            <div class="kysimus">
+                <p>Kas Sa oled käinud see aasta lapsega matkamas?</p>
+                <input type="radio" id="jah3" name="kysimus3">
+                <label for="jah3">Jah</label>
+                <input type="radio" id="ei3" name="kysimus3">
+                <label for="ei3">Ei</label>
+            </div>
+            
+            <div class="kysimus">
+                <p>Kas Sa oled sel kuul lapsega meisterdanud midagi?</p>
+                <input type="radio" id="jah4" name="kysimus4">
+                <label for="jah4">Jah</label>
+                <input type="radio" id="ei4" name="kysimus4">
+                <label for="ei4">Ei</label>
+            </div>
+            
+            <div class="kysimus">
+                <p>Kas Sa oled käinud lapsega kinos?</p>
+                <input type="radio" id="jah5" name="kysimus5">
+                <label for="jah5">Jah</label>
+                <input type="radio" id="ei5" name="kysimus5">
+                <label for="ei5">Ei</label>
+            </div>
+            <a href="#" data-role="button">SAADA</a>
+        </div>
+    
+          <div id="footer" data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+              <ul>
+                <li>
+                  <a href="#leht2" data-icon="home" data-transition="flow"></a>
+                </li>
+                <li>
+                  <a href="#eesmark" data-icon="bullets" data-transition="flow"></a>
+                </li>
+                <li>
+                  <a href="#kysimustik" data-icon="star" data-transition="flow"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </div> <!-- end of kysimustik -->
+
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Praktikum - jquerymobile 3(24.01)</title>
+  </head>
+
+  <body>
+    <div data-role="page" id="page1">
+      <div data-role="header" data-position="fixed">
+        <div class="ui-field-contain">
+          <label for="textinput-fc">Telefonide müük</label>
+          <input
+            name="textinput-fc"
+            id="textinput-fc"
+            type="text"
+            placeholder="Otsi"
+            value=""
+          />
+        </div>
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#" data-icon="home">Avaleht</a></li>
+            <li><a href="#" data-icon="shop">Ostukorv</a></li>
+            <li><a href="#" data-icon="phone">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+      <div data-role="content">
+        <div style=" text-align: center">
+          <img src="img\honor.png" alt="honor" width="220" height="410" />
+        </div>
+      </div>
+      <div data-role="collapsible" data-collapsed="false">
+        <h3>Honor 5X</h3>
+        <p>See on vana nutitelefon</p>
+        <div data-role="collapsible" data-collapsed="true">
+          <h3>Üldnäitajad</h3>
+          <div class="ui-grid-b">
+            <div class="ui-block-a">aastast</div>
+            <div class="ui-block-b">2015</div>
+            <div class="ui-block-a">SIM</div>
+            <div class="ui-block-b">Dual SIM</div>
+            <div class="ui-block-a">GPU</div>
+            <div class="ui-block-b">Adreno 405</div>
+          </div>
+        </div>
+        <div data-role="collapsible" data-collapsed="true">
+          <h3>Ekraan</h3>
+          <p>5,5 tolli</p>
+        </div>
+        <div data-role="collapsible" data-collapsed="true">
+          <h3>Mälu</h3>
+          <p>16 GB</p>
+        </div>
+        <div data-role="collapsible" data-collapsed="true">
+          <h3>Operatsioonsüsteem</h3>
+          <p>Android 5.1.1</p>
+        </div>
+      </div>
+      <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#" data-icon="arrow-l">Tagasi</a></li>
+            <li><a href="#" data-icon="check">linnuke</a></li>
+            <li><a href="#" data-icon="arrow-r">Edasi</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Praktikum - jquerymobile 1(21.01)</title>
+  </head>
+
+  <body>
+    <div data-role="page" id="page">
+      <div data-role="header"><h1>Leht 1</h1></div>
+      <div data-role="content">
+        <ul data-role="listview">
+          <li>
+            <a href="#tooted" data-transition="flow"
+              ><img src="img/1.png" />
+              <h1 class="ui-li-heading">Tooted</h1>
+              <p class="ui-li-maintext"><i>Parim valik!</i></p>
+              <p class="ui-li-aside">UUED TOOTED!</p>
+              <p class="ui-li-count">3</p></a
+            >
+          </li>
+          <li>
+            <a href="#galerii" data-transition="flow"
+              ><img src="img/2.png" />
+              <h1 class="ui-li-heading">Galerii</h1>
+              <p class="ui-li-maintext"><i>Fotod meie toodetest</i></p></a
+            >
+          </li>
+          <li>
+            <a href="#asukoht" data-transition="flow"
+              ><img src="img/3.png" />
+              <h1 class="ui-li-heading">Asukoht</h1>
+              <p class="ui-li-maintext"><i>Tule külla!</i></p></a
+            >
+          </li>
+          <li>
+            <a href="#kontakt" data-transition="flow"
+              ><img src="img/4.png" />
+              <h1 class="ui-li-heading">Kontakt</h1>
+              <p class="ui-li-maintext"><i>Võta ühendust!</i></p></a
+            >
+          </li>
+          <li>
+            <a href="#tootajad" data-transition="flow"
+              ><img src="img/5.png" />
+              <h1 class="ui-li-heading">Töötajad</h1>
+              <p class="ui-li-maintext"><i>Tutvu meie töötajatega</i></p></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div data-role="footer"><h4>Page Footer</h4></div>
+    </div>
+
+    <div data-role="page" id="tooted">
+      <div data-role="header"><h1>Tooted</h1></div>
+      <div data-role="content">
+        <ul data-role="listview" data-filter="true">
+          <li data-role="list-divider">Lauad</li>
+          <li>Söögilaud</li>
+          <li>Diivanilaud</li>
+          <li data-role="list-divider">Kapid</li>
+          <li>Riidekapp</li>
+          <li>Kummut</li>
+          <li data-role="list-divider">Voodid</li>
+          <li>Suured voodid</li>
+          <li>Välivoodid</li>
+        </ul>
+      </div>
+      <div data-role="footer"><h4>Page Footer</h4></div>
+    </div>
+
+    <div data-role="page" id="tootajad">
+      <div data-role="header"><h1>Töötajad</h1></div>
+      <div data-role="main" class="ui-content">
+        <ul data-role="listview" data-inset="true" data-filter="true">
+          <li>
+            <a href="#tootaja1" data-transition="flow"
+              ><img src="img/tootaja1.png" />
+              <h1 class="ui-li-heading">Madis</h1>
+              <p class="ui-li-maintext">11 22 33 44</p></a
+            >
+          </li>
+          <li>
+            <a href="#tootaja2" data-transition="flow"
+              ><img src="img/tootaja2.png" />
+              <h1 class="ui-li-heading">Sass</h1>
+              <p class="ui-li-maintext">11 22 33 44</p></a
+            >
+          </li>
+          <li>
+            <a href="#tootaja3" data-transition="flow"
+              ><img src="img/tootaja3.png" />
+              <h1 class="ui-li-heading">Peep</h1>
+              <p class="ui-li-maintext">11 22 33 44</p></a
+            >
+          </li>
+          <li>
+            <a href="#tootaja4" data-transition="flow"
+              ><img src="img/tootaja4.png" />
+              <h1 class="ui-li-heading">Toots</h1>
+              <p class="ui-li-maintext">11 22 33 44</p></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div data-role="footer"><h4>Page Footer</h4></div>
+    </div>
+
+    <div data-role="page" id="tootaja1">
+      <div data-role="header"><h1>Madis</h1></div>
+      <div data-role="main" class="ui-content">
+        <ul data-role="listview">
+          <li>Madis Mats</li>
+          <li>11 22 33 44</li>
+        </ul>
+      </div>
+      <div data-role="footer"><h4>Page Footer</h4></div>
+    </div>
+
+    <div data-role="page" id="tootaja2">
+      <div data-role="header"><h1>Sass</h1></div>
+      <div data-role="main" class="ui-content">
+        <ul data-role="listview">
+          <li>Sass Traat</li>
+          <li>11 22 33 44</li>
+        </ul>
+      </div>
+      <div data-role="footer"><h4>Page Footer</h4></div>
+    </div>
+
+    <div data-role="page" id="tootaja3">
+      <div data-role="header"><h1>Peep</h1></div>
+      <div data-role="main" class="ui-content">
+        <ul data-role="listview">
+          <li>Peep Paap</li>
+          <li>11 22 33 44</li>
+        </ul>
+      </div>
+      <div data-role="footer"><h4>Page Footer</h4></div>
+    </div>
+
+    <div data-role="page" id="tootaja4">
+      <div data-role="header"><h1>Toots</h1></div>
+      <div data-role="main" class="ui-content">
+        <ul data-role="listview">
+          <li>Toots Kiur</li>
+          <li>11 22 33 44</li>
+        </ul>
+      </div>
+      <div data-role="footer"><h4>Page Footer</h4></div>
+    </div>
+  </body>
+</html>

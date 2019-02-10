@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Praktikum - jquerymobile 4(24.01)</title>
+  </head>
+
+  <body>
+    <div data-role="page" id="page1">
+      <div data-role="header" data-position="fixed">
+        <h4><a href="https://khk.ee/">www.khk.ee</a></h4>
+      </div>
+      <div data-role="content">
+        Kui sa klikid sellele telefoninumbrile
+        <a href="#popikas" data-rel="popup">+37255556666</a>
+        <div data-role="popup" id="popikas">
+          <a
+            href="#"
+            data-rel="back"
+            data-role="button"
+            data-icon="delete"
+            data-iconpos="notext"
+            class="ui-btn-right"
+            >Sule</a
+          >
+          <p>
+            <a href="tel:+37255556666" data-role="button"
+              >Helista +37255556666</a
+            >
+          </p>
+        </div>
+        siis näen telefoninumbrit millele omakorda klikkides hakatakse
+        helistama. Sisestatud e-maililt
+        <a href="#popikas2" data-rel="popup">janku.juss@gmail.com</a>
+        <div data-role="popup" id="popikas2">
+          <a
+            href="#"
+            data-rel="back"
+            data-role="button"
+            data-icon="delete"
+            data-iconpos="notext"
+            class="ui-btn-right"
+            >Sule</a
+          >
+          <p>
+            <a
+              href="mailto:janku.juss@gmail.com subject:praktilile ülesanne"
+              data-role="button"
+              >Saada email</a
+            >
+          </p>
+        </div>
+        saadetakse kiri
+      </div>
+
+      <div data-role="footer"><h4>Praktiline ülesanne</h4></div>
+    </div>
+  </body>
+</html>
